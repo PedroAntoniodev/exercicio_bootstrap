@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Games</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #0a0a0a;
+            z-index: 1000;
+        }
+        header h1{
+            color: #fff;
+        }
+        .navbar-nav .nav-link.active{
+            color: #fff;
+        }
+        .nav-item a{
+            color: #fff;
+        }
+        .carousel-item img{
+            height: 40em;
+        }
+        .carousel-caption h2{
+            color: rgba(255, 252, 252, 0.849);
+        }
+        section{
+            padding-top: 60px;
+        }
+        body{
+            background-color: #494545;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Portal de Games</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias">Noticias</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#lancamentos">Futuros lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#curiosidades">Curiosidades</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h3 class="p-2">Principais lançamentos</h3>
+            <div class="container">
+                <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="https://cdn.sortiraparis.com/images/80/66131/1000455-game-awards-2023-black-myth-wukong-devoile-sa-date-de-sortie.jpg" alt="imagem de um game">
+                            <div class="carousel-caption">
+                                <h2>Black myth wukung</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://flowgames.gg/wp-content/uploads/2023/06/SW-OUTLAWSS.png" alt="imagem de star wars">
+                            <div class="carousel-caption">
+                                <h2>Star wars outlaws</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/4O1TJyIUbuP4rj-qM-jtdOXdeXc=/0x0:1638x928/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/7/w/BfFglRTiqUSYN8q6kj6w/imagem-2024-01-18-183933778.png" alt="imagem do indiana jones">
+                            <div class="carousel-caption">
+                            <h2>Indiana jones e o Grande Circulo</h2>
+                            </div>
+                        </div>
+                    </div>
+            <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel"  data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel"  data-bs-slide-to="2"></button>
+            </div>
+        </section>
+            <h3 id="noticias" class="p-3">Noticias no mundo dos Games</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">
+                            <img src="https://assetsio.gnwcdn.com/crash-bandicoot-4-its-about-time-officially-announced-with-debut-trailer-1592839132124.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp" />
+                            <div class="card-body">
+                                <h4 class="card-title">Crash Bandicoot 5 teria Spyro e foi cancelado pela Activision</h4>
+                                <p class="card-text">
+                                    Em busca de mais jogos como serviço, Activision descartou Crash Bandicoot 5
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                                <footer class="card-footer">
+                                    Postado em <time>26/08/2024 às 15:00</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">
+                            <img src="https://flowgames.gg/wp-content/uploads/2023/10/image-2023-10-18T105226.721.jpg" />
+                            <div class="card-body">
+                                <h4 class="card-title">PS5 Pro: devs comentaram segredos na Gamescom 2024 [rumor]</h4>
+                                <p class="card-text">
+                                    Alguns desenvolvedores parecem ter revelado que tiveram acesso ao PS5 Pro ou informações dele na Gamescom 2024
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                                <footer class="card-footer">
+                                    Postado em <time>26/08/2024 às 15:00</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">
+                            <img src="https://flowgames.gg/wp-content/uploads/2024/08/GV6cHBAXYAAYodI.jpeg" />
+                            <div class="card-body">
+                                <h4 class="card-title">Sem Switch 2: Nintendo Direct e Indie World confirmados</h4>
+                                <p class="card-text">
+                                    A Nintendo confirmou que na próxima terça (27), teremos um combo de Nintendo Direct e Indie World de mais de 40 minutos
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                                <footer class="card-footer">
+                                    Postado em <time>26/08/2024 às 15:00</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
